@@ -1,0 +1,11 @@
+//HEADER
+.header {
+  @include flex-row-wrap;
+
+  justify-content: center;
+
+  &__box {
+    text-align: center;
+    padding: 1rem;
+  }
+}

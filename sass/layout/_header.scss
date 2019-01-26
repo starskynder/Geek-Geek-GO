@@ -1,11 +1,16 @@
 //HEADER
 .header {
-  @include flex-row-wrap;
+  @include flex-col;
 
   justify-content: center;
+  align-items: center;
+  height: 50vh;
 
   &__box {
+    @include flex-col;
+
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 1rem;
   }
 }

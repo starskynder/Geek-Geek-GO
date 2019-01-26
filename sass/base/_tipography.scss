@@ -54,3 +54,22 @@
     padding: 0 3rem;
   }
 }
+
+.heading-secondary--article {
+  color: $white;
+  margin-bottom: 6rem;
+  padding: 1rem;
+  border-top: 4px solid $white;
+  border-bottom: 4px solid $white;
+  width: 100%;
+  background-color: $shocking-pink;
+  position: relative;
+  box-shadow: 0 6px 0 $black, 0 -6px 0 $black;
+
+  &::before {
+    content: "⭗";
+    color: $white;
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+}

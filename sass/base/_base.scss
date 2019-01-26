@@ -20,3 +20,17 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+a {
+  color: $shocking-pink;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  padding: 2rem 0;
+}

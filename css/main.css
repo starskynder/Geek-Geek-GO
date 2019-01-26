@@ -39,7 +39,8 @@ img {
     left: -100%;
     top: 50%;
     border-radius: 5px;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    text-align: center; }
   .heading-primary::after {
     content: "go!";
     display: inline-block;
@@ -49,18 +50,40 @@ img {
     color: #000;
     border-bottom: 4px solid #000;
     top: 50%;
-    transform: translateY(-50%);
+    backface-visibility: hidden;
     text-transform: uppercase;
     position: absolute;
-    right: -90%; }
+    right: -90%;
+    animation: moveIn 1.5s cubic-bezier(0, 1.17, 1, -0.4) forwards; }
+  .heading-primary--motto {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    background-color: #000;
+    color: #fff;
+    align-self: stretch;
+    border-radius: 5px;
+    padding: 0 3rem; }
+
+@keyframes moveIn {
+  0% {
+    transform: translate(5rem, -50%);
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translate(0, -50%); } }
 
 .header {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center; }
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; }
   .header__box {
-    text-align: center;
-    padding: 1rem; }
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
 
 .navigation {
   position: relative;

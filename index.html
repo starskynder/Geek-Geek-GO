@@ -15,7 +15,11 @@
     <nav>
       <div class="navigation">
         <div class="navigation__menu">
-          <button class="navigation__btn">
+          <button
+            class="navigation__btn"
+            aria-label="menu button"
+            title="menu button"
+          >
             <span class="navigation__btn--icon"></span>
           </button>
         </div>
@@ -37,10 +41,14 @@
     </nav>
     <header class="header">
       <div class="header__box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--sub"> Geek</span>
-          <span class="heading-primary--sub"> Geek</span>
-        </h1>
+        <div class="header__box--inner">
+          <h1 class="heading-primary">
+            <span class="heading-primary--sub"> Geek</span>
+            <span class="heading-primary--sub"> Geek</span>
+          </h1>
+        </div>
+
+        <p class="heading-primary--motto">Web Dev for the Pro.</p>
       </div>
     </header>
     <main>

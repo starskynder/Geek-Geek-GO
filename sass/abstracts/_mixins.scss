@@ -4,6 +4,11 @@
   flex-flow: row wrap;
 }
 
+@mixin flex-row-nowrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 @mixin flex-col {
   display: flex;
   flex-flow: column wrap;

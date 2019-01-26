@@ -72,13 +72,14 @@
     padding: 1rem;
     background-color: $shocking-pink;
     color: $white;
-    height: 100vh;
+    border-radius: 5px;
     transition: all 0.2s;
     font-size: 3rem;
 
     &--active {
       right: 0;
       width: 75vw;
+      height: 89vh;
     }
   }
 

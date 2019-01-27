@@ -1,0 +1,22 @@
+// CONTACTS
+.contacts {
+  &__subscribe {
+    padding: 2rem;
+    background-color: $shocking-pink;
+    color: $white;
+  }
+
+  &__social {
+    @include flex-row-wrap;
+
+    justify-content: center;
+    background-color: $black;
+    padding: 2rem;
+  }
+
+  &__icon {
+    width: 60px;
+    display: inline-block;
+    padding: 0.8rem;
+  }
+}

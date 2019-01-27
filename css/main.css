@@ -309,6 +309,8 @@ p {
   .articles__author, .articles__date {
     display: block;
     font-weight: 700; }
+  .articles__link {
+    color: #b8157c; }
 
 .jobs {
   display: flex;
@@ -364,7 +366,10 @@ p {
   .contacts__icon {
     width: 60px;
     display: inline-block;
-    padding: 0.8rem; }
+    padding: 0.8rem;
+    transition: all 0.2s ease-in-out; }
+    .contacts__icon:focus, .contacts__icon:hover {
+      transform: translateY(-5px); }
 
 .team {
   display: flex;
@@ -382,7 +387,7 @@ p {
     position: relative;
     max-width: 50rem;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: rgba(0, 0, 0, 0.9); }
     @media screen and (min-width: 75em) {
       .team__box {
         flex: 40%; } }

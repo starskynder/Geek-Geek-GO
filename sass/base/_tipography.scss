@@ -73,3 +73,20 @@
     margin: 0 0.5rem;
   }
 }
+
+.heading-secondary--job {
+  text-align: center;
+}
+
+.heading-tertiary {
+  border-bottom: 3px solid $shocking-pink;
+  width: 100%;
+  padding: 1rem;
+
+  &--pop {
+    &::before,
+    &::after {
+      content: '"';
+    }
+  }
+}

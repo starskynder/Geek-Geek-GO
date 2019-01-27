@@ -28,7 +28,7 @@ p {
 .heading-primary {
   font-family: "Anonymous Pro", monospace;
   font-size: 3.5rem;
-  color: #ff1ead;
+  color: #000;
   font-weight: 700;
   position: relative;
   display: inline-block;
@@ -124,7 +124,12 @@ p {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  height: 30vh; }
+  height: 30vh;
+  position: relative;
+  background-image: url(../img/pinkwave2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
   .header__box {
     display: flex;
     flex-flow: column wrap;
@@ -185,7 +190,8 @@ p {
     .navigation__list--active {
       right: 0;
       width: 75vw;
-      height: 89vh; }
+      height: 89vh;
+      box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.6); }
   .navigation__item {
     padding: 1rem; }
   .navigation__link {
@@ -195,7 +201,8 @@ p {
       text-decoration: none; }
     .navigation__link:focus, .navigation__link:hover {
       background-color: #fff;
-      color: #ff1ead; }
+      color: #ff1ead;
+      display: inline-block; }
 
 .articles {
   display: flex;

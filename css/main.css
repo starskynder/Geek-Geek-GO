@@ -434,3 +434,11 @@ p {
   .team__box:focus .team__img,
   .team__box:hover .team__img {
     opacity: 0; }
+
+.credits {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 4rem;
+  border-top: 4px solid #fff; }

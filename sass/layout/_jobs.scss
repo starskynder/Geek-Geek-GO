@@ -1,0 +1,20 @@
+// JOBS
+.jobs {
+  background-color: $white;
+  padding: 6rem 2em;
+
+  &__box {
+    @include flex-col;
+
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    margin: 3rem 0;
+    box-shadow: 3px 3px 0 $shocking-pink, -3px -3px 0 $shocking-pink,
+      6px 6px 0 rgba($black, 0.7), -6px -6px 0 rgba($black, 0.7);
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+}

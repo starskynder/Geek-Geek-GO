@@ -10,6 +10,7 @@
     background-color: $shocking-pink;
     color: $black;
     transition: all 0.3s ease-out;
+    margin-top: auto;
 
     &::after {
       content: "⟶";

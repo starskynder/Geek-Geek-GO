@@ -73,24 +73,30 @@ p {
     border-radius: 5px;
     padding: 0 3rem; }
 
-.heading-secondary--article {
-  color: #fff;
-  margin-bottom: 6rem;
-  padding: 1rem;
-  border-top: 4px solid #fff;
-  border-bottom: 4px solid #fff;
-  width: 100%;
-  background-color: #ff1ead;
-  position: relative;
-  box-shadow: 0 6px 0 #000, 0 -6px 0 #000; }
-  .heading-secondary--article::before {
-    content: "⭗";
-    color: #fff;
-    display: inline-block;
-    margin: 0 0.5rem; }
-
-.heading-secondary--job {
+.heading-secondary {
+  font-size: 2.7rem;
   text-align: center; }
+  .heading-secondary--article {
+    font-size: 2.7rem;
+    color: #fff;
+    margin-bottom: 6rem;
+    padding: 1rem;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    width: 100%;
+    background-color: #ff1ead;
+    position: relative;
+    box-shadow: 0 6px 0 #000, 0 -6px 0 #000;
+    text-align: left; }
+    .heading-secondary--article::before {
+      content: "⭗";
+      color: #fff;
+      display: inline-block;
+      margin: 0 0.5rem; }
+  .heading-secondary--social {
+    color: #ff1ead;
+    width: 100%;
+    margin: 3rem; }
 
 .heading-tertiary {
   border-bottom: 3px solid #ff1ead;
@@ -135,6 +141,22 @@ p {
     transition: all 0.3s ease-in-out; }
     .btn--jobs:focus, .btn--jobs:hover {
       box-shadow: 3px 3px 0 #ff1ead, -3px -3px 0 #ff1ead, 6px 6px 0 #000, -6px -6px 0 #000; }
+
+.mailing-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+  .mailing-list__input {
+    margin: 2rem 0;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    padding: 1rem; }
+  .mailing-list__submit {
+    margin: 0;
+    background-color: #000;
+    color: #fff; }
 
 .header {
   display: flex;
@@ -258,3 +280,20 @@ p {
     box-shadow: 3px 3px 0 #ff1ead, -3px -3px 0 #ff1ead, 6px 6px 0 rgba(0, 0, 0, 0.7), -6px -6px 0 rgba(0, 0, 0, 0.7); }
   .jobs__content {
     padding: 1rem; }
+
+.contacts__subscribe {
+  padding: 2rem;
+  background-color: #ff1ead;
+  color: #fff; }
+
+.contacts__social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #000;
+  padding: 2rem; }
+
+.contacts__icon {
+  width: 60px;
+  display: inline-block;
+  padding: 0.8rem; }

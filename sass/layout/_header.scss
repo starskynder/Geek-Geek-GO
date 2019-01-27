@@ -5,6 +5,11 @@
   justify-content: center;
   align-items: center;
   height: 30vh;
+  position: relative;
+  background-image: url(../img/pinkwave2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   &__box {
     @include flex-col;

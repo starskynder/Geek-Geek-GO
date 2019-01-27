@@ -1,17 +1,27 @@
 // CONTACTS
 .contacts {
+  @include flex-col;
+
+  justify-content: center;
+
+  @media screen and (min-width: $bp-medium) {
+    @include flex-row-wrap;
+  }
+
   &__subscribe {
-    padding: 2rem;
+    padding: 4rem 2rem;
     background-color: $shocking-pink;
     color: $white;
+    flex: 1;
   }
 
   &__social {
     @include flex-row-wrap;
 
+    flex: 1;
     justify-content: center;
     background-color: $black;
-    padding: 2rem;
+    padding: 4rem 2rem;
   }
 
   &__icon {

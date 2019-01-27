@@ -1,15 +1,41 @@
 .articles {
   @include flex-row-wrap;
 
+  justify-content: center;
   background-color: $black;
-  padding: 6rem 0;
+  padding: 5rem 0;
+
+  @media screen and (min-width: $bp-large) {
+    padding: 7rem;
+  }
+
+  @media screen and (min-width: $bp-largest) {
+    padding: 10rem;
+  }
 
   &__article {
+    @include flex-col;
+
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 6rem 1rem;
     margin: 4rem;
     background-color: $white;
     position: relative;
     border-radius: 5px;
+    //max-width: 350px;
+
+    @media screen and (min-width: $bp-small) {
+      flex: 40%;
+    }
+
+    @media screen and (min-width: $bp-medium) {
+      flex: 33%;
+    }
+
+    @media screen and (min-width: $bp-large) {
+      flex: 25%;
+    }
 
     &::after {
       content: "";

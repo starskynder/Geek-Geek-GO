@@ -97,6 +97,17 @@ p {
     color: #ff1ead;
     width: 100%;
     margin: 3rem; }
+  .heading-secondary--team {
+    flex: 100%;
+    background-color: #ff1ead; }
+    @media screen and (min-width: 50em) {
+      .heading-secondary--team {
+        margin-bottom: 5rem; } }
+  .heading-secondary--jobs {
+    flex: 100%; }
+    @media screen and (min-width: 50em) {
+      .heading-secondary--jobs {
+        margin-bottom: 5rem; } }
 
 .heading-tertiary {
   border-bottom: 3px solid #ff1ead;
@@ -122,7 +133,8 @@ p {
   .btn--more {
     background-color: #ff1ead;
     color: #000;
-    transition: all 0.3s ease-out; }
+    transition: all 0.3s ease-out;
+    margin-top: auto; }
     .btn--more::after {
       content: "⟶";
       display: inline-block;
@@ -144,7 +156,7 @@ p {
 
 .mailing-list {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center; }
   .mailing-list__input {
@@ -152,7 +164,8 @@ p {
     border: none;
     border-radius: 5px;
     width: 70%;
-    padding: 1rem; }
+    padding: 1rem;
+    max-width: 50rem; }
   .mailing-list__submit {
     margin: 0;
     background-color: #000;
@@ -169,6 +182,12 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+  @media screen and (min-width: 50em) {
+    .header {
+      height: 50vh; } }
+  @media screen and (min-width: 75em) {
+    .header {
+      height: 90vh; } }
   .header__box {
     display: flex;
     flex-flow: column wrap;
@@ -245,14 +264,34 @@ p {
 .articles {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   background-color: #000;
-  padding: 6rem 0; }
+  padding: 5rem 0; }
+  @media screen and (min-width: 75em) {
+    .articles {
+      padding: 7rem; } }
+  @media screen and (min-width: 93.75em) {
+    .articles {
+      padding: 10rem; } }
   .articles__article {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 6rem 1rem;
     margin: 4rem;
     background-color: #fff;
     position: relative;
     border-radius: 5px; }
+    @media screen and (min-width: 37.5em) {
+      .articles__article {
+        flex: 40%; } }
+    @media screen and (min-width: 50em) {
+      .articles__article {
+        flex: 33%; } }
+    @media screen and (min-width: 75em) {
+      .articles__article {
+        flex: 25%; } }
     .articles__article::after {
       content: "";
       width: 100%;
@@ -268,8 +307,15 @@ p {
     font-weight: 700; }
 
 .jobs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   background-color: #fff;
   padding: 6rem 2em; }
+  @media screen and (min-width: 75em) {
+    .jobs {
+      padding: 8rem 3rem;
+      margin: 6rem; } }
   .jobs__box {
     display: flex;
     flex-flow: column wrap;
@@ -278,22 +324,109 @@ p {
     padding: 3rem 0;
     margin: 3rem 0;
     box-shadow: 3px 3px 0 #ff1ead, -3px -3px 0 #ff1ead, 6px 6px 0 rgba(0, 0, 0, 0.7), -6px -6px 0 rgba(0, 0, 0, 0.7); }
+    @media screen and (min-width: 37.5em) {
+      .jobs__box {
+        flex: 40%;
+        margin: 2rem; } }
+    @media screen and (min-width: 50em) {
+      .jobs__box {
+        flex: 25%; } }
+    @media screen and (min-width: 75em) {
+      .jobs__box {
+        flex: 20%; } }
   .jobs__content {
     padding: 1rem; }
 
-.contacts__subscribe {
-  padding: 2rem;
-  background-color: #ff1ead;
-  color: #fff; }
+.contacts {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center; }
+  @media screen and (min-width: 50em) {
+    .contacts {
+      display: flex;
+      flex-flow: row wrap; } }
+  .contacts__subscribe {
+    padding: 4rem 2rem;
+    background-color: #ff1ead;
+    color: #fff;
+    flex: 1; }
+  .contacts__social {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    justify-content: center;
+    background-color: #000;
+    padding: 4rem 2rem; }
+  .contacts__icon {
+    width: 60px;
+    display: inline-block;
+    padding: 0.8rem; }
 
-.contacts__social {
+.team {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  background-color: #000;
-  padding: 2rem; }
-
-.contacts__icon {
-  width: 60px;
-  display: inline-block;
-  padding: 0.8rem; }
+  justify-content: center; }
+  @media screen and (min-width: 31.25em) {
+    .team {
+      padding: 4rem; } }
+  @media screen and (min-width: 50em) {
+    .team {
+      margin: 8rem 0;
+      padding: 10rem 4rem; } }
+  .team__box {
+    margin: 4rem 0;
+    position: relative;
+    max-width: 50rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); }
+    @media screen and (min-width: 75em) {
+      .team__box {
+        flex: 40%; } }
+    @media screen and (min-width: 93.75em) {
+      .team__box {
+        flex: 25%; } }
+  .team__img {
+    display: block;
+    transition: all 0.5s ease-in-out; }
+  .team__content {
+    display: flex;
+    flex-flow: column wrap;
+    transition: all 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: #fff;
+    padding: 3rem;
+    transform: scale(0);
+    z-index: 1; }
+  .team__icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; }
+  .team__icon {
+    display: inline-block;
+    margin: 1rem;
+    width: 32px;
+    transition: all 0.3s ease-in; }
+    .team__icon:focus, .team__icon:hover {
+      transform: translateY(-1rem); }
+  .team__name, .team__role {
+    display: block;
+    margin: 0.5rem; }
+  .team__name {
+    font-weight: 700; }
+  .team__role {
+    border-bottom: 1px solid #fff; }
+  .team__box:focus .team__content,
+  .team__box:hover .team__content {
+    opacity: 1;
+    transform: scale(1); }
+  .team__box:focus .team__img,
+  .team__box:hover .team__img {
+    opacity: 0; }

@@ -1,6 +1,6 @@
 // MAILING LIST
 .mailing-list {
-  @include flex-row-wrap;
+  @include flex-col;
 
   justify-content: center;
   align-items: center;
@@ -11,6 +11,7 @@
     border-radius: 5px;
     width: 70%;
     padding: 1rem;
+    max-width: 50rem;
   }
 
   &__submit {

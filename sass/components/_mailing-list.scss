@@ -1,0 +1,21 @@
+// MAILING LIST
+.mailing-list {
+  @include flex-row-wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  &__input {
+    margin: 2rem 0;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    padding: 1rem;
+  }
+
+  &__submit {
+    margin: 0;
+    background-color: $black;
+    color: $white;
+  }
+}

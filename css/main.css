@@ -249,7 +249,11 @@ p {
       right: 0;
       width: 75vw;
       height: 89vh;
-      box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.6); }
+      box-shadow: -3px 3px 0 rgba(0, 0, 0, 0.6); }
+      @media screen and (min-width: 75em) {
+        .navigation__list--active {
+          width: 50vw;
+          height: 96vh; } }
   .navigation__item {
     padding: 1rem; }
   .navigation__link {

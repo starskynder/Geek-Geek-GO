@@ -34,13 +34,11 @@
     background-color: $black;
     color: $white;
     transition: all 0.3s ease-in-out;
-    //transform: scale(1);
 
     &:focus,
     &:hover {
       box-shadow: 3px 3px 0 $shocking-pink, -3px -3px 0 $shocking-pink,
         6px 6px 0 $black, -6px -6px 0 $black;
-      //transform: scale(1.2);
     }
   }
 }
